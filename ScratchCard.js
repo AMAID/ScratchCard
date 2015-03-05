@@ -108,7 +108,12 @@
     // AngularJS module
     // TODO: modify it to a directive.
     angular.module('ScratchCard', [])
-      .value('ScratchCard', ScratchCard);
+      .directive('scratchCard', function () {
+          return {
+              restrict: "A",
+              link: function (scope, element) { ScratchCard(element[0]); },
+          };
+      });
   } else {
     // Apply to a global variable.
     if (global.ScratchCard) {

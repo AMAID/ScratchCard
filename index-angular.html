@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="ScratchCard">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ScratchCard Demo</title>
+    <style>
+        div {
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        p {
+            margin: 0;
+            padding: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div scratch-card><p>Hooray! $300</p></div>
+    <div scratch-card><p>Hooray! $400</p></div>
+    <div scratch-card><p>Hooray! $500</p></div>
+    <script src="http://cdn.bootcss.com/angular.js/1.3.8/angular.min.js"></script>
+    <script src="ScratchCard.js"></script>
+    <script>
+        /*
+        var appModule = angular.module('app', []);
+        appModule.directive('scratchCard', function () {
+            return {
+                restrict: "A",
+                link: function (scope,element) { ScratchCard(element[0]); },
+            };
+        });
+        */
+    </script>
+</body>
+</html>
